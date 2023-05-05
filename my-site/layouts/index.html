@@ -1,0 +1,6 @@
+<h2>Draft Pages</h2>
+<ul>
+  {{ range (where .Site.Pages ".Draft" true) }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
